@@ -193,7 +193,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 590px;
+  height: 650px;
   align-items: flex-start;
   flex-direction: row;
   justify-content: flex-end;
@@ -201,6 +201,11 @@ body {
 @media screen and (min-width: 768px) {
   .subheader {
     height: 500px;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .subheader {
+    height: 600px;
   }
 }
 .subheader a {
@@ -295,15 +300,14 @@ main {
   }
 }
 
-.widget {
+.main_widget {
   display: inline-flexbox;
   flex-direction: row;
   margin: 8px 5% 8px 5%;
   width: 90%;
-  background-color: white;
 }
 @media screen and (min-width: 768px) {
-  .widget {
+  .main_widget {
     margin-top: 50px;
     margin-right: 2%;
     width: 35%;
@@ -311,21 +315,37 @@ main {
     margin-left: 0;
   }
 }
-.widget > h4 {
+.main_widget h4 {
   width: 90%;
   margin: 0;
   clear: both;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: bold;
-  padding: 20px 0;
-  padding-left: 45px;
+}
+.main_widget p {
+  width: 90%;
+  padding-bottom: 10px;
+  color: #7c7f81;
+  font-weight: bold;
+}
+.main_widget .widget {
+  background-color: white;
+}
+.main_widget .widget > h4 {
+  width: 90%;
+  margin: 0;
+  clear: both;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 0;
+  padding-left: 10px;
 }
 @media screen and (min-width: 768px) {
-  .widget > h4 {
-    padding: 20px;
+  .main_widget .widget > h4 {
+    padding: 10px 5;
   }
 }
-.widget > #search-del {
+.main_widget .widget > #search-del {
   position: relative;
   width: 98%;
   margin: 10px 1% 10px 1%;
@@ -334,7 +354,7 @@ main {
   border-radius: 7px;
   padding-left: 20px;
 }
-.widget > .detect-btn {
+.main_widget .widget > .detect-btn {
   position: absolute;
   width: 20%;
   height: 30px;
@@ -345,26 +365,26 @@ main {
   margin-top: -10%;
 }
 @media screen and (min-width: 600px) {
-  .widget > .detect-btn {
+  .main_widget .widget > .detect-btn {
     margin-left: 76%;
     margin-top: -45px;
   }
 }
 @media screen and (min-width: 768px) {
-  .widget > .detect-btn {
+  .main_widget .widget > .detect-btn {
     margin-left: 24%;
     margin-top: -4%;
     width: 10%;
   }
 }
 @media screen and (min-width: 1022px) {
-  .widget > .detect-btn {
+  .main_widget .widget > .detect-btn {
     margin-left: 24%;
     margin-top: -2.8%;
     width: 10%;
   }
 }
-.widget > .order-btn {
+.main_widget .widget > .order-btn {
   width: 98%;
   margin: 10px 1% 10px 1%;
   height: 40px;
@@ -373,11 +393,11 @@ main {
   border-radius: 7px;
   color: white;
 }
-.widget > hr {
+.main_widget .widget > hr {
   width: 98%;
   margin: 10px 1% 10px 1%;
 }
-.widget > p {
+.main_widget .widget > p {
   width: 98%;
   margin: 0 1% 0 1%;
   padding-bottom: 20px;
@@ -426,6 +446,7 @@ main {
   margin-left: 5%;
   font-size: 18px;
   font-weight: bold;
+  color: #7c7f81;
 }
 .Collections .adds {
   width: 90%;
