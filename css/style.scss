@@ -32,7 +32,7 @@
     >div ul li{
         padding: 10px;
         font-size: 18px;
-        
+
         @media screen and (min-width: 768px){
             display: inline;
         }
@@ -180,7 +180,7 @@ main{
 
     }
     >
-    .search-del{
+    #search-del{
         position: relative;
         width: 98%;
         margin: 10px 1% 10px 1%;
